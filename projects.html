@@ -12,8 +12,14 @@
     <meta property="og:url" content="https://github.com/naprikot">
     <meta property="og:image" content="https://github.com/naprikot.png">
     <meta property="og:description" content="Frontend developer portfolio showcasing projects, work experience and education">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="site-wrapper">
 
     <header>
         <div class="logo">
@@ -34,40 +40,40 @@
     <hr>
 
     <main>
-        <section>
+        <section class="hero">
             <h1>My Projects</h1>
             <p>A collection of web applications and projects I have built.</p>
         </section>
 
-        <section>
-            <article>
+        <section class="card-list">
+            <article class="project-card" id="html-only-portfolio">
                 <h2>HTML Only Portfolio</h2>
                 <p>A pure semantic HTML portfolio structured for optimal SEO and accessible layout.</p>
-                <a href="#">View Code</a> | <a href="#">Live Demo</a>
+                <p class="card-links"><a href="#">View Code</a> <span aria-hidden="true">&middot;</span> <a href="#">Live Demo</a></p>          
             </article>
 
-            <article>
+            <article class="project-card" id="calculator">
                 <h2>Calculator App</h2>
                 <p>A simple interactive calculator built with vanilla JavaScript and CSS grid.</p>
-                <a href="#">View Code</a> | <a href="#">Live Demo</a>
+                <p class="card-links"><a href="#">View Code</a> <span aria-hidden="true">&middot;</span> <a href="#">Live Demo</a></p>
             </article>
 
-            <article>
+            <article class="project-card" id="quiz-app">
                 <h2>Quiz App</h2>
                 <p>An interactive trivia quiz application with automated score tracking.</p>
-                <a href="#">View Code</a> | <a href="#">Live Demo</a>
+                <p class="card-links"><a href="#">View Code</a> <span aria-hidden="true">&middot;</span> <a href="#">Live Demo</a></p>
             </article>
 
-            <article>
+            <article class="project-card" id="countdown-timer">
                 <h2>Countdown Timer</h2>
                 <p>A custom countdown widget for events and product launches.</p>
-                <a href="#">View Code</a> | <a href="#">Live Demo</a>
+                <p class="card-links"><a href="#">View Code</a> <span aria-hidden="true">&middot;</span> <a href="#">Live Demo</a></p>
             </article>
 
-            <article>
+            <article class="project-card" id="product-upcoming-page">
                 <h2>Product Upcoming Page</h2>
                 <p>A coming-soon landing page with email subscription integration.</p>
-                <a href="#">View Code</a> | <a href="#">Live Demo</a>
+                <p class="card-links"><a href="#">View Code</a> <span aria-hidden="true">&middot;</span> <a href="#">Live Demo</a></p>
             </article>
         </section>
     </main>
@@ -78,5 +84,6 @@
         <p>&copy; all rights reserved 2026</p>
     </footer>
 
+</div>
 </body>
 </html>

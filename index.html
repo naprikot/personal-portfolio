@@ -12,8 +12,14 @@
     <meta property="og:url" content="https://github.com/naprikot">
     <meta property="og:image" content="https://github.com/naprikot.png">
     <meta property="og:description" content="Frontend developer portfolio showcasing projects, work experience and education">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="site-wrapper">
 
     <!-- Header Section -->
     <header>
@@ -36,83 +42,91 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section>
+        <section class="hero">
             <h1>Frontend Developer</h1>
             <p>Building fast, accessible interfaces with clean, semantic code.</p>
         </section>
 
         <!-- Main Information Layout -->
-        <section>
+        <section class="content-grid">
+        
             <!-- Projects Sidebar / List -->
-            <article>
-                <h2>Projects</h2>
-                <ul>
-                    <li><a href="projects.html#html-only-portfolio">HTML Only Portfolio</a></li>
-                    <li><a href="projects.html#calculator">Calculator</a></li>
-                    <li><a href="projects.html#quiz-app">Quiz App</a></li>
-                    <li><a href="projects.html#countdown-timer">Countdown Timer</a></li>
-                    <li><a href="projects.html#product-upcoming-page">Product Upcoming Page</a></li>
-                </ul>
-            </article>
+            <div class="column column-projects">
+                <article>
+                    <h2 class="section-title">Projects</h2>
+                    <ul class="project-list">
+                        <li><a href="projects.html#html-only-portfolio">HTML Only Portfolio</a></li>
+                        <li><a href="projects.html#calculator">Calculator</a></li>
+                        <li><a href="projects.html#quiz-app">Quiz App</a></li>
+                        <li><a href="projects.html#countdown-timer">Countdown Timer</a></li>
+                        <li><a href="projects.html#product-upcoming-page">Product Upcoming Page</a></li>
+                    </ul>
+                </article>
+            </div>
 
             <!-- Work Experience Section -->
-            <article>
-                <h2>Work Experience</h2>
-                <h3>roadmap.sh</h3>
-                <p>Solved all the frontend projects</p>
-                <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">Visit my Profile</a>
-            </article>
+            <div class="column column-experience">
+                <h2 class="section-title">Work Experience</h2>
+                <article class="experience-card">
+                    <h3>roadmap.sh</h3>
+                    <p>Solved all the frontend projects</p>
+                    <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">Visit my Profile</a>
+                </article>
 
-            <!-- OpenSource Work Section -->
-            <article>
-                <h2>OpenSource Work</h2>
-                <p>Contributed to 69 opensource projects. Made my own projects with 420 GitHub Stars.</p>
-                <a href="https://github.com/naprikot" target="_blank" rel="noopener noreferrer">Visit my GitHub Profile</a>
-            </article>
-
+                <article class="experience-card">
+                    <h3>OpenSource Work</h3>
+                    <p>Contributed to 69 opensource projects. Made my own projects with 420 GitHub Stars.</p>
+                    <a href="https://github.com/naprikot" target="_blank" rel="noopener noreferrer">Visit my GitHub Profile</a>
+                </article>
+            </div>
+                
             <!-- Education Section -->
-            <article>
-                <h2>Education</h2>
-                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-                <h3>Courses I took:</h3>
-                <ul>
-                    <li>Object Oriented Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Web Engineering</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Human Computer Interaction</li>
-                    <li>Computer Graphics</li>
-                    <li>Database Management Systems</li>
-                    <li>Distributed Database Systems</li>
-                    <li>Discreet Mathematics</li>
-                </ul>
-            </article>
+            <div class="column column-education">
+                <article>
+                    <h2 class="section-title">Education</h2>
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    <h3>Courses I took:</h3>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Computer Graphics</li>
+                        <li>Database Management Systems</li>
+                        <li>Distributed Database Systems</li>
+                        <li>Discreet Mathematics</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
         <!-- Reviews / Testimonials Section -->
-        <section>
-            <h2>Reviews from my Teachers</h2>
+        <section class="reviews">
+            <h2 class="section-title">Reviews from my Teachers</h2>
 
-            <blockquote>
-                <p>Simanta was a brilliant student; always stood out with his assignments.</p>
-                <footer>
-                    <cite>Jane Doe</cite> &mdash; Assistant Professor
-                </footer>
-            </blockquote>
+            <div class="review-list">
+                <blockquote class="review-card">
+                    <p>Simanta was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                        <cite>Jane Doe</cite> &mdash; Assistant Professor
+                    </footer>
+                </blockquote>
 
-            <blockquote>
-                <p>Simanta was a brilliant student; always stood out with his assignments.</p>
-                <footer>
-                    <cite>John Doe</cite> &mdash; Assistant Professor
-                </footer>
-            </blockquote>
+                <blockquote class="review-card">
+                    <p>Simanta was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                        <cite>John Doe</cite> &mdash; Assistant Professor
+                    </footer>
+                </blockquote>
 
-            <blockquote>
-                <p>Simanta was a brilliant student; always stood out with his assignments.</p>
-                <footer>
-                    <cite>Jane Doe</cite> &mdash; Assistant Professor
-                </footer>
-            </blockquote>
+                <blockquote class="review-card">
+                    <p>Simanta was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                        <cite>Jane Doe</cite> &mdash; Assistant Professor
+                    </footer>
+                </blockquote>
+            </div>
         </section>
     </main>
 
@@ -123,5 +137,6 @@
         <p>&copy; all rights reserved 2026</p>
     </footer>
 
+</div>
 </body>
 </html>
