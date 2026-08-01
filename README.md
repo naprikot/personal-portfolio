@@ -29,4 +29,4 @@ All four pages share the same header, navigation, and footer, and are linked tog
 - CSS3 (custom properties, Flexbox, media queries — no CSS framework)
 - Google Fonts (loaded via CDN)
 
-## [Live Demo](https://naprikot.github.io/personal-portfolio/contact.html)
+## [Live Demo](https://naprikot.github.io/personal-portfolio)
